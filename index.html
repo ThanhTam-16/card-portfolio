@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thành Tâm - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body data-theme="dark">
+    <!-- Controls -->
+    <div class="controls">
+        <button class="control-btn" id="themeToggle" title="Toggle Theme">
+            <i class="fas fa-sun"></i>
+        </button>
+        <button class="control-btn lang-switch" id="langToggle" title="Switch Language">EN</button>
+    </div>
+
+    <!-- Custom cursor elements -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- Background animation -->
+    <div class="bg-animation"></div>
+    
+    <div class="container">
+        <div class="card">
+            <!-- Profile image carousel -->
+            <div class="profile-img-container">
+                <!-- Orbit elements -->
+                <div class="orbit-container">
+                    <div class="orbit-item"><i class="fas fa-code"></i></div>
+                    <div class="orbit-item"><i class="fas fa-palette"></i></div>
+                    <div class="orbit-item"><i class="fas fa-laptop"></i></div>
+                    <div class="orbit-item"><i class="fas fa-globe"></i></div>
+                </div>
+                
+                <!-- Multiple profile images for carousel -->
+                <div class="profile-img active" id="profile-img-1">
+                    <img src="images/avt-2.JPEG" alt="Profile Image 1">
+                </div>
+                <div class="profile-img" id="profile-img-2">
+                    <img src="images/avt-1.jpg" alt="Profile Image 2">
+                </div>
+                <div class="profile-img" id="profile-img-3">
+                    <img src="images/avt-3.JPEG" alt="Profile Image 3">
+                </div>
+            </div>
+            
+            <h2 class="name-title" data-vi="Nguyễn Thành Tâm" data-en="Nguyen Thanh Tam">Nguyen Thanh Tam</h2><br>
+            <div class="title typing-effect" data-vi="Web Developer" data-en="Web Developer">Web Developer</div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/thanhtam.100604" class="social-link facebook">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/thtam_106" class="social-link instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.tiktok.com/@tamzit100604" class="social-link tiktok">
+                    <i class="fab fa-tiktok"></i>
+                    <span>TikTok</span>
+                </a>
+                <a href="https://www.youtube.com/@tamnguyenthanh11" class="social-link youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+                <a href="https://www.linkedin.com/in/t%C3%A2m-nguy%E1%BB%85n-th%C3%A0nh-a12a27345/" class="social-link linkedin">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/ThanhTam-dvl" class="social-link github">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 data-vi="Dự Án Nổi Bật" data-en="Featured Projects">Featured Projects</h2>
+            <div class="projects-container">
+                <div class="projects">
+                    <div class="project-carousel" id="projectCarousel">
+                        <!-- TZ BOOKSTORE -->
+                        <div class="project-card highlight tilt-effect" style="background-image: url('images/tzbookstore.png');">
+                            <div class="project-links">
+                                <a href="https://github.com/ThanhTam-dvl/Website_TZBookStore_LaravelMysql" title="View Code"><i class="fab fa-github"></i></a>
+                                <a href="https://tzbookstore.id.vn/" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <h3 data-vi="Website TZBookStore" data-en="TZBookStore Website">TZBookStore Website</h3>
+                            <p data-vi="Một website bán sách với tất cả những tính năng tốt nhất và hiện đại nhất." data-en="A book selling website with all the best and most modern features.">A book selling website with all the best and most modern features.</p>
+                        </div>
+
+                        <!-- FIELD FOOTBALL MANAGEMENT -->
+                        <div class="project-card highlight tilt-effect" style="background-image: url('images/tzfootball.png');">
+                            <div class="project-links">
+                                <a href="https://github.com/ThanhTam-dvl" title="View Code"><i class="fab fa-github"></i></a>
+                                <a href="https://tzfootball.vercel.app/" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <h3 data-vi="Website Quản Lý Sân Bóng" data-en="Field Football Management Website">Field Football Management Website</h3>
+                            <p data-vi="Hệ thống quản lý sân bóng đá với đầy đủ tính năng đặt sân, thanh toán và quản lý." data-en="Football field management system with full features of field booking, payment and management.">Football field management system with full features of field booking, payment and management.</p>
+                        </div>
+
+                        <!-- MY PORTFOLIO -->
+                        <div class="project-card highlight tilt-effect" style="background-image: url('images/tzmyportfolio.png');">
+                            <div class="project-links">
+                                <a href="https://github.com/ThanhTam-dvl/MyPortfolio" title="View Code"><i class="fab fa-github"></i></a>
+                                <a href="https://tzmyportfolio.vercel.app/" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <h3 data-vi="My Portfolio" data-en="My Portfolio">My Portfolio</h3>
+                            <p data-vi="Một trang web giới thiệu về bản thân và các dự án đã thực hiện." data-en="A website introducing myself and the projects I have done.">A website introducing myself and the projects I have done.</p>
+                        </div>
+
+                        <!-- AI CALC -->
+                        <div class="project-card highlight tilt-effect" style="background-image: url('images/ai-calc.png');">
+                            <div class="project-links">
+                                <a href="https://github.com/ThanhTam-dvl/AI-Powered-Calc-FE" title="View Code"><i class="fab fa-github"></i></a>
+                                <a href="https://ai-powered-calc-fe.vercel.app/" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <h3 data-vi="AI Powered Calculate" data-en="AI Powered Calculate">AI Powered Calculate</h3>
+                            <p data-vi="Một website có thể vẽ và hỏi bất cứ điều gì và trả lời với AI." data-en="A website that can draw and ask anything and answer with AI.">A website that can draw and ask anything and answer with AI.</p>
+                        </div>
+
+                        <!-- AI MEDICAL CHATBOT -->
+                        <div class="project-card highlight tilt-effect" style="background-image: url('images/ai-medical-chatbot.png');">
+                            <div class="project-links">
+                                <a href="https://github.com/ThanhTam-dvl/AI_Medical_Chatbot.git" title="View Code"><i class="fab fa-github"></i></a>
+                                <a href="https://ai-medical-chatbot.onrender.com" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <h3 data-vi="AI Medical Chatbot" data-en="AI Medical Chatbot">AI Medical Chatbot</h3>
+                            <p data-vi="AI Mediscan được thiết kế để tư vấn sức khỏe, từ hình ảnh và câu hỏi của người dùng AI Mediscan sẽ trả lời tất cả những vấn đề liên quan đến sức khỏe." data-en="AI Mediscan is designed for healthcare consultation, from user images and questions AI Mediscan will answer all health related.">AI Mediscan is designed for healthcare consultation, from user images and questions AI Mediscan will answer all health related.</p>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <!-- Carousel controls for desktop -->
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p data-vi="© 2024 Nguyễn Thành Tâm. Tất cả các quyền được bảo lưu." data-en="© 2024 Nguyen Thanh Tam. All rights reserved.">
+            © 2024 Nguyen Thanh Tam. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
